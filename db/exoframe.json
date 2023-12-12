@@ -1,0 +1,10 @@
+{
+  "name": "siwhelan-message-database",
+  "domain": false,
+  "hostname": "siwhelan-message-database",
+  "image": "postgres:12",
+  "env": {
+    "POSTGRES_PASSWORD": "@siwhelan-postgres-password"
+  },
+  "volumes": ["siwhelan_message_database_volume:/var/lib/postgresql/data"]
+}
